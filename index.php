@@ -6,3 +6,11 @@
  * Time: 12:41
  */
 echo "<h4>Hello world</h4>";
+
+try{
+  $conn=new mysqli("mysql://mysql:3306/","admin","root");
+}
+catch(mysqli_sql_exception $e){
+  die("error");
+}
+echo "success";
