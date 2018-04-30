@@ -8,7 +8,7 @@
 echo "<h4>Hello world</h4>";
 
 try{
-  $conn=new mysqli("mysql://mysql:3306/","admin","root");
+  $conn=new mysqli("172.30.92.25","admin","root");
 }
 catch(mysqli_sql_exception $e){
   die("error");
