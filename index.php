@@ -14,7 +14,7 @@ catch(mysqli_sql_exception $e){
   die("error");
 }
 
-$sql=file_get_content("test.sql)";
+$sql=file_get_contents("test.sql");
 $conn->query($sql);
                       
 echo "success";
