@@ -18,8 +18,8 @@ $sql=file_get_contents("test.sql");
 $conn->query($sql);
                       
 echo "success";
-  $sql="show tables";
-$re= $conn->query($sql);
+  $sql2="show tables";
+$re= $conn->query($sql2);
 
 foreach ($re as $v){
 
