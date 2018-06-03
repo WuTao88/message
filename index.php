@@ -13,4 +13,16 @@ try{
 catch(mysqli_sql_exception $e){
   die("error");
 }
+
+$sql=file_get_content("test.sql)";
+$conn->query($sql);
+                      
 echo "success";
+  $sql="show tables";
+$re= $conn->query($sql);
+
+foreach ($re as $v){
+
+    print_r($v);
+
+}
